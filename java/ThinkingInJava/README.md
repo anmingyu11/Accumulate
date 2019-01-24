@@ -36,3 +36,5 @@ Collections.synchronizedList()
 synchronized不属于方法签名的组成部分，所以可以在覆盖方法的时候加上去。
 ThreadLocal
 竞争条件
+signal() signalAll()
+interrput()和shutdownNow() Future.cancel()

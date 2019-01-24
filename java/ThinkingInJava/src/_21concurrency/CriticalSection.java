@@ -114,11 +114,11 @@ class PairManipulator implements Runnable {
 
     @Override
     public String toString() {
-        return "Pair: " + pm.getPair() + " checkCounter = " pm.checkCounter.get();
+        return "Pair: " + pm.getPair() + " checkCounter = " + pm.checkCounter.get();
     }
 }
 
-class PairChecker implements Runnable{
+class PairChecker implements Runnable {
 
     private PairManager pm;
 
@@ -128,11 +128,12 @@ class PairChecker implements Runnable{
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             pm.checkCounter.incrementAndGet();
             pm.getPair().checkState();
         }
     }
 }
+
 public class CriticalSection {
 }
